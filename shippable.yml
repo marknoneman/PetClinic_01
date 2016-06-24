@@ -5,10 +5,6 @@ language: java
 jdk:
    - openjdk7
 
-build:
-   ci:
-      - mvn install -DskipTests=true
-      
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
