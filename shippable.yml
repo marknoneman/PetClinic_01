@@ -5,6 +5,12 @@ language: java
 jdk:
    - openjdk7
 
+build:
+   ci:
+      - mkdir -p shippable/codecoverage
+      - mkdir -p shippable/testresults
+      - mvn install -DskipTests=true
+   
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
