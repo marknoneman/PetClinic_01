@@ -308,8 +308,6 @@
                     <includes>
                         <include>**/*Tests.java</include>
                     </includes>
-                    <redirectTestOutputToFiles>true</redirectTestOutputToFiles>
-                    <reportsDirectory>../shippable/testresults</reportsDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -394,11 +392,8 @@
                 <version>${cobertura.version}</version>
                 <configuration>
                     <formats>
-                        <format>xml</format>
+                        <format>html</format>
                     </formats>
-                    <outputDirectory>
-                    	shippable/codecoverage
-                    </outputDirectory>
                     <check/>
                 </configuration>
             </plugin>
