@@ -58,7 +58,7 @@ public abstract class AbstractClinicServiceTests {
 
     @Test
     public void shouldFindOwnersByLastName() {
-        Collection<Owner> owners = this.clinicService.findOwnerByLastName("Davis");
+        Collection<Owner> owners = this.clinicService.findOwnerByLastName("Daviss");
         assertThat(owners.size()).isEqualTo(2);
 
         owners = this.clinicService.findOwnerByLastName("Daviss");
